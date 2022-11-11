@@ -24,6 +24,7 @@ body {
     background-position:inherit;
     list-style: none;
     background-attachment:fixed ;
+    
    
 }
 .conteiner{
@@ -73,12 +74,14 @@ body {
     box-shadow: 5px 5px black;
 }
 .hero{
-    max-width: 90%;
-    margin: 50px;
+    max-width: 100%;
+    margin: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+   justify-content: center;
+    align-content: center;
+    max-height: 400px;
+    gap: 100px;
 }
 
 .hero h2{
@@ -88,9 +91,31 @@ body {
 }
 .hero p{
     align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    font-weight: 600;
 
 }
 
+.buttons{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+#button-contactos, #button-productos{
+    padding: 5px 20px;
+    border: 2px black solid;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#button-contactos:hover, #button-productos:hover{
+    background-color: var(--verdeoscuro);
+    box-shadow: 5px 5px;
+}
 
 /*style products*/
 .products{
@@ -196,4 +221,16 @@ body {
     font-weight: bolder ;
     text-shadow:1px 1px rgb(255, 255, 255);
     
+}
+/*style section ubications*/
+.ubicacion{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.ubicacion p {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--verdeclaro);
 }
