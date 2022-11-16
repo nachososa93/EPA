@@ -275,7 +275,7 @@ body {
         right: 15%;
         left: 15%;
         flex-direction: column;
-        display: flex;
+        display: none;
         align-items: center;
         background-color: var(--girsclaro);
         border: 2px var(--verdeazulado) solid ;
@@ -285,7 +285,7 @@ body {
         z-index: 2;
         
     }
-    #menuinput:checked +.ulnav ul {
+    #menuinput:checked +.ulnav {
         display:flex ;
     }
 
