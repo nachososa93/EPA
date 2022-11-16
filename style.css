@@ -34,7 +34,7 @@ body {
     align-items: center;
     
 }
-.navbar {
+.navbar{
     width: 100%;
     height: 100px;
     padding: 20px;
@@ -43,9 +43,10 @@ body {
     justify-content: space-between;
     position: fixed;
     background-color:var(--verdeoscuro) 
-   
 
 }
+
+
 .logo {
     width: 80px;
     height: 80px;
@@ -73,14 +74,19 @@ body {
     background-color: #222;
     box-shadow: 5px 5px black;
 }
+
+.menulabel, #menuinput{
+    display: none;
+}
+
 .hero{
-    max-width: 100%;
+    max-width: 90%;
     margin: 30px;
     display: flex;
     align-items: center;
    justify-content: center;
     align-content: center;
-    max-height: 400px;
+ 
     gap: 100px;
 }
 
@@ -94,7 +100,6 @@ body {
     justify-content: flex-start;
     display: flex;
     font-weight: 600;
-
 }
 
 .buttons{
@@ -233,4 +238,77 @@ body {
     font-size: 20px;
     font-weight: 500;
     background-color: var(--verdeclaro);
+}
+
+@media (max-width:930px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero img{
+        height: 200px;
+    }
+    .infohero {
+        background-color: var(--girsclaro);
+        border: 1px black solid;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .ubicacion{
+        padding: 0 30px;
+    }
+
+    .menulabel img {
+        width: 50px;
+        height: 50px;
+    }
+    .menulabel{
+        display: flex;
+        position: absolute;
+        top:30px;
+        right: 15px;
+        cursor: pointer;
+    }
+    .ulnav{
+        position: absolute;
+        top:100px;
+        width: 70%;
+        right: 15%;
+        left: 15%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        background-color: var(--girsclaro);
+        border: 2px var(--verdeazulado) solid ;
+        border-radius: 0 0 20px 20px;
+        border-top: 0px;
+        gap:10px;
+        z-index: 2;
+        
+    }
+    #menuinput:checked +.ulnav ul {
+        display:flex ;
+    }
+
+   }
+
+
+
+@media (max-width:405px)
+{
+    .infohero{
+        max-width: 80%;
+        flex-wrap: wrap;
+    }
+    .infohero h2{
+        font-size: 30px;
+    }
+    .buttons{
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap:5px
+    }
+    
 }
