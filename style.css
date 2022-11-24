@@ -1,11 +1,12 @@
-*{margin: 0;
+*{
+    margin: 0;
     padding:0;
     color: black;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior:smooth;
-    border: solid red 3px;
+    /* border: solid red 1px; */
 }
 :root{
       --verdeclaro: #9bdf46; 
@@ -30,7 +31,8 @@ body {
 .conteiner{
     width: 100%;
     height: 15vh;
-    position: top ;
+    position: fixed;
+    top: 0;
     align-items: center;
 }
 .navbar{
@@ -42,7 +44,6 @@ body {
     justify-content: space-between;
     position: absolute;
     top: 0;
-   
     background-color:var(--verdeoscuro)
 }
 
@@ -81,12 +82,13 @@ body {
 
 .hero{
     margin: 30px;
+    margin-top: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
     gap: 100px;
-    width: 90%;
+    width: 95%;
 }
 
 .hero h2{
@@ -233,13 +235,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 80px;
+    margin: 20px;
     flex-direction: row-reverse;
+  
 }
 .ubicacion p {
     font-size: 20px;
-    font-weight: 500;
-    background-color: var(--verdeclaro);
+    font-weight: 550;
+    background-color: var(--girsclaro);
+    border-radius: 2px;
+    
+}
+.ubicacion img {
+    padding: 3px;
+    border-radius: 1rem;
+
+}
+.textoubicacion{
+    padding: 10px 30px;
 }
 .contacto{
     display: flex;
@@ -252,28 +265,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #e0e0e0;
+    font-weight: 600;
 }
 .contactconteiner{
     display: flex;
-    justify-content: space-around;
+    
     
 }
 .contactcel ul, .contactredsocial ul
 {
     list-style: none;
     gap: 200px;
+    max-width: 100%;
+    justify-content: center;
 }
 .contactcel:hover, .contactredsocial:hover{
     background: rgb(113, 134, 118, 0.9);
     zoom: 120%;
         box-shadow: 5px 5px;
 }
+.contactcel li, .contactredsocial li 
+{
+    color: #e0e0e0;
+    font-weight: 300;
+}
 .contactcel, .contactredsocial{
     border: solid 2px gray;
     border-radius: 1rem;
     padding: 30px;
-    width: 400px;
-    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,18 +301,21 @@ body {
     font-weight: 500;
     background: rgb(113, 134, 118, 0.6);
     margin: 30px;
+    
     }
 
 @media (max-width:930px){
     .hero{
+        margin: 70px 0px 0px 20px;
         flex-direction: column;
         height: 600px;
-       
         justify-content: center;
         align-items: center;
+        width: 95%;
     }
     .hero img{
         height: 150px;
+        margin-top: -60px;
     }
     .infohero {
         background-color: var(--girsclaro);
@@ -301,15 +324,19 @@ body {
         padding: 10px;
     }
     .ubicacion{
-        padding: 0 30px;
+        padding: 0px;
         width: 100%;
         gap: 0;
         display: flex;
         flex-direction: column-reverse;
-    }
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        }
     .ubicacion img{
         zoom: 70%;
-        padding-left: 50px;
+        padding-left: 20px;
+
     }
   
 
@@ -384,12 +411,12 @@ body {
     display: flex;
     flex-direction: column;
 }
-.contactcel, .contactredsocial{
-    width: 50%;
-}
 
-@media (max-width:400px)
+@media (max-width:440px)
 {
+    .hero{
+        margin-top: 100px;
+    }
     .infohero{
         max-width: 100%;
         flex-wrap: wrap;
@@ -398,24 +425,36 @@ body {
     .infohero h2{
         font-size: 30px;
     }
-    .buttons{
-        max-width: 100%;
-        flex-direction: column;
-        align-items: center;
+    .buttons form{
         justify-content: center;
+        align-items: center;
         display: flex;
-        gap:30px
-    }
-.buttons form  {
-    gap: 300px
-}
+        flex-direction: column;
+            }
   .ubicacion{
-    margin-top: 100px;
+    margin-top: 50px;
+    gap: 30px;
   }
-  .ubicacion img
-  {
-    padding-left: 100px;
+  .hero img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  .contactcel, .contactredsocial{
+    font-size: 15px;
+    margin: 5px;
+    padding: 10px;
+}
+.contacto{
+    text-align: center;
+}
+.contactconteiner{
+    margin: 0px 20px;
+}
+.buttons form{
+    gap: 10px;
+    
+}
 }
 
 
