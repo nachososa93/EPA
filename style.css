@@ -126,7 +126,7 @@ body {
     box-shadow: 5px 5px;
 }
 
-/*style products*/
+/*style products
 .products{
     flex-flow: column;
     align-items: center;
@@ -229,7 +229,7 @@ body {
     font-weight: bolder ;
     text-shadow:1px 1px rgb(255, 255, 255);
     
-}
+}*/
 /*style section ubications*/
 .ubicacion{
     display: flex;
@@ -268,11 +268,6 @@ body {
     color: #e0e0e0;
     font-weight: 600;
 }
-.contactconteiner{
-    display: flex;
-    
-    
-}
 .contactcel ul, .contactredsocial ul
 {
     list-style: none;
@@ -301,7 +296,12 @@ body {
     font-weight: 500;
     background: rgb(113, 134, 118, 0.6);
     margin: 30px;
-    
+    width: 400px;
+    }
+    .contactconteiner{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
     }
 
 @media (max-width:930px){
@@ -410,6 +410,9 @@ body {
 .contactconteiner{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 @media (max-width:440px)
@@ -450,10 +453,15 @@ body {
 }
 .contactconteiner{
     margin: 0px 20px;
+    flex-direction: column;
+    display: flex;
 }
 .buttons form{
     gap: 10px;
     
+}
+.contactcel, .contactredsocial{
+    width: 350px;
 }
 }
 
