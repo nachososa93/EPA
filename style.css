@@ -6,6 +6,8 @@ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 box-sizing: border-box;
 text-decoration: none;  
 scroll-behavior:smooth;
+list-style-type:none;
+color: white;
 }
 :root{
       --girsclaro: #e0e0e0;      
@@ -17,58 +19,68 @@ scroll-behavior:smooth;
      --tierra:#DDA77B;
      --tierra2:#DCBF85;
 
+
 }
 
 body {     
  background-color:var(--grisoscuro);
-    list-style: none;
-   
-    
-   
-}
-.conteiner{
     width: 100%;
-    height: 15vh;
-    position:top;
-    align-items: center;
-    
+    height: 100vh;
 }
-.navbar {
+nav{
     width: 100%;
-    height: 100px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    background-color:var(--verdeoscuro) 
-   
-
-}
-.logo {
-    width: 80px;
     height: 80px;
-    margin-top: 10px;
-    cursor: pointer;
-    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+#logoepa{
+    width: 70px;
+    height: 70px;
+}
+.ulnav{
+    display: flex;
+    gap: 30px;
 
 }
-.ulnav li { 
-    display: inline-block;
-    padding: 3px;
-    margin: 20px;
-  
+.hero{
+    width: 100%;
 }
-.ulnav li a {
-    padding: 4px;
-    border: 2px black solid;
-    border-radius: 3px;
+.hero img {
+    width: 100%;
+}
+.tituloshero{
+    position: absolute;
+    top: 200px;
+    left:600px;
+    gap:30px;
+    display: flex;
+    flex-direction: column;
     
-    
+   
+}
+.tituloshero h1{
+    font-size: 200px;
+    color:var(--girsclaro);
+    -webkit-text-stroke: 5px black;
+    animation: slidetitulos 1.5s ease-out 0s 1 normal both;
+}
+.tituloshero h2 {
+    font-size:38px;
+    color:var(--girsclaro);
+    -webkit-text-stroke: 2px black;
+    animation: slidetitulos 1s ease-out 0.5s 1 normal both;
+}
+.equipo
+@keyframes slidetitulos {
+	0% {
+		opacity: 0;
+		transform: translateX(250px);
+	}
 
-}
-.ulnav li a:hover {
-    color: whitesmoke;
-    background-color: #222;
-    box-shadow: 5px 5px black;
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
