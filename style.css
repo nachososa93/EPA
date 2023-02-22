@@ -72,7 +72,56 @@ nav{
     -webkit-text-stroke: 2px black;
     animation: slidetitulos 1s ease-out 0.5s 1 normal both;
 }
-.equipo
+.equipo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    padding: 50px 30px;
+}
+.equipo-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px;
+}
+.integrantesgrupo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.integrantesgrupo ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+}
+#integrantes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+#integrantes img {
+    border: var(--verdeepa) solid 2px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px white;
+    
+}
+#integrantes h3{
+    font-size:23px;
+}
 @keyframes slidetitulos {
 	0% {
 		opacity: 0;
