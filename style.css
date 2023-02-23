@@ -123,12 +123,27 @@ nav{
 #integrantes h3{
     font-size:23px;
 }
-.imagenes-productos div ul li img {
-    width: 200px;
-    animation: slideimg 20s infinite ease-out normal both;
+.masterbox-imagenes{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .imagenes-productos {
     display: flex;
+    width: 100%;
+    flex-direction: row;
+    
+}
+.cajadeproductos{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+     
+    flex-direction: column;
+  
 }
 .ulproductos{
     display: flex;
@@ -141,7 +156,8 @@ nav{
     background-size: contain;
     background-position: center;
     width: 100%;
-  height: 300px;
+
+ 
   
 
 }
@@ -155,9 +171,13 @@ nav{
     background-size: cover;
     background-position: center;
   width: 100%;
-  height: 500px;
+
   animation: slideimg 30s infinite ease-out normal both;
       
+}
+.ulproductosss{ 
+    width: 100%
+
 }
 @keyframes slidetitulos {
 	0% {
@@ -203,28 +223,28 @@ background-size: contain;
    }
 }
 @keyframes slideimgbarrenos{
-    0% {  background-image: url(./img/barreno\ estandar.jpg);
+    0% {  background-image: url(./img-slide/barreno\ estandar.jpg);
     background-size:cover;
     }
-    15%{  background-image: url(./img/barreno\ zoom\ 1.jpg);
+    15%{  background-image: url(./img-slide/barreno\ zoom\ 1.jpg);
      background-size: cover;
     }
-    30%{  background-image: url(./img/barreno\ zoom\ 2.jpg);
+    30%{  background-image: url(./img-slide/barreno\ zoom\ 2.jpg);
    background-size: cover;
     }
-    45%{  background-image: url(./img/barreno\ para\ golpear.jpg);
+    45%{  background-image: url(./img-slide/barreno\ para\ golpear.jpg);
     background-size: cover;
     }
-    60%{  background-image: url(./img/mango\ barreno\ reforzado.jpg);
+    60%{  background-image: url(./img-slide/mango\ barreno\ reforzado.jpg);
      background-size: cover;
     }
-    75%{  background-image: url(./img/EXTENSOR\ BARRENO.jpg);
+    75%{  background-image: url(./img-slide/EXTENSOR\ BARRENO.jpg);
     background-size: cover;
     }
-    90%{  background-image: url(./img/extensor\ barreno\ zoom.jpg);
+    90%{  background-image: url(./img-slide/extensor\ barreno\ zoom.jpg);
         background-size: cover;
         }
-    100%{  background-image: url(./img/extensor\ barreno\ zoom\ 2.jpg);
+    100%{  background-image: url(./img-slide/extensor\ barreno\ zoom\ 2.jpg);
             background-size: cover;
             }    
     
