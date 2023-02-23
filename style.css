@@ -23,7 +23,8 @@ color: white;
 }
 
 body {     
- background-color:var(--grisoscuro);
+    background-color: #636363;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23dda77b' fill-opacity='0.29' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     width: 100%;
     height: 100vh;
 }
@@ -53,7 +54,7 @@ nav{
 .tituloshero{
     position: absolute;
     top: 200px;
-    left:600px;
+    right:50px;
     gap:30px;
     display: flex;
     flex-direction: column;
@@ -122,6 +123,32 @@ nav{
 #integrantes h3{
     font-size:23px;
 }
+.imagenes-productos div ul li img {
+    width: 200px;
+    animation: slideimg 20s infinite ease-out normal both;
+}
+.ulproductos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.ulproductoss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-image: url(./img/anemometro.jpg);
+    background-repeat: no-repeat;
+    background-size: normal;
+  width: 1200px;
+  height: 600px;
+  border: 1px red solid;
+  border-radius: 30px ;
+  animation: slideimg 20s infinite ease-out normal both;
+    
+}
 @keyframes slidetitulos {
 	0% {
 		opacity: 0;
@@ -132,4 +159,26 @@ nav{
 		opacity: 1;
 		transform: translateX(0);
 	}
+}
+@keyframes slideimg{
+   0%{  background-image: url(./img/anemometro\ 2.jpg);
+background-size: auto;
+   }
+   20%{  background-image: url(./img/anemometro\ 3.jpg);
+    background-size: auto;
+   }
+   40%{  background-image: url(./img/balanza\ con\ granos.jpg);
+  background-size: auto;
+   }
+   60%{  background-image: url(./img/balanza\ digital\ de\ bolsilo.jpg);
+   background-size: auto;
+   }
+   80%{  background-image: url(./img/cucharin\ en\ suelo.jpg);
+    background-size: auto;
+   }
+   100%{  background-image: url(./img/humedimetro.jpg);
+   background-size: auto;
+   }
+   
+
 }
