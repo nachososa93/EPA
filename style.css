@@ -54,6 +54,14 @@ nav {
   width: 100%;
   flex-direction: column;
 }
+.barrenos-img-text{
+  display: flex ;
+  width: 100%;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  
+}
 .barrenos {
   align-items: center;
   justify-content: center;
@@ -62,45 +70,56 @@ nav {
   gap: 30px;
   width: 100%;
 }
+.barrenos h2{
+  font-size: 40px;
+  font-weight: 600;
+}
 .img-barrenos {
-  width: 50%;
+  width:25%;
+  height: 700px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./img-catalogo/2.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  animation: slidebackgraund 12s ease 0s infinite forwards;
 }
-.img-barrenos ul li img {
-  width: 500px;
-  animation: slide 30s ease 0s 1 normal forwards;
+.text-barrenos{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-
-.img-barrenos ul li {
-  width: 100%;
-}
+/* 
 #img1 {
-  animation: slide1 12s ease 0s infinite forwards;
+  animation: slid11 12s ease 0s infinite forwards;
 }
 #img2 {
-  animation: slide2 12s ease 0s infinite forwards;
+  animation: slid22 12s ease 0s infinite forwards;
 }
 #img3 {
-  animation: slide3 12s ease 0s infinite forwards;
+  animation: slid33 12s ease 0s infinite forwards;
 }
-#img1,
-#img2,
-#img3 {
-  position: absolute;
-  top: 2150px;
-  left: 600px;
+#img1 {
+  position: relative;
+ width: 100%;
 }
-.img-barrenos ul {
-  display: flex;
+#img2{
+  position: relative;
+  left:-61%
 }
-.barrenos p {
-    position: relative;
-    width: 50%;
+#img3{
+  position: relative;
+  left:-150%
+}
+ */
+.text-barrenos {
+    
+ padding: 50px;
     font-size: 30px;
-    right: 1px;
     font-weight: 600;
-    padding-top: 150px;
 }
 .barrenos p span{
     color: var(--tierra);
@@ -271,4 +290,23 @@ nav {
       opacity: 1;
     }
     }
+    @keyframes slidebackgraund {
+      0% {background-image: url(./img-catalogo/2.jpg);
+      }
+      33%{
+        background-image: url(./img-catalogo/2.jpg);
+      }
+      37%{
+        background-image: url(./img-catalogo/3.jpg);
+        
+      }
+      65%{background-image: url(./img-catalogo/3.jpg);
+      }
+      69%{background-image: url(./img-catalogo/4.jpg);
+        
+      }
+      100% {
+        background-image: url(./img-catalogo/4.jpg);
+      }
+      }
   
