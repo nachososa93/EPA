@@ -48,9 +48,49 @@ nav{
 .hero{
     width: 100%;
 }
-.hero img {
+.hero img{
     width: 100%;
 }
+.div-catalogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productos{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.img-productos{
+ width: 50%;
+    display: flex;
+    justify-content:space-between;
+}
+.img-productos  ul li img{
+    width:500px;
+    animation: slide 30s ease 0s 1 normal forwards;
+}
+
+
+.img-productos ul li {
+    width: 100%;
+}
+#img1{
+    animation: slide1 8s ease 0s infinite forwards;
+}
+#img2{
+    animation: slide2 8s ease 2.5s  infinite forwards;
+}
+#img3{
+    animation: slide3 8s ease 5s  infinite forwards;
+}
+.img-productos ul {
+    display: flex;
+    
+}
+
 .tituloshero{
     position: absolute;
     top: 200px;
@@ -58,8 +98,6 @@ nav{
     gap:30px;
     display: flex;
     flex-direction: column;
-    
-   
 }
 .tituloshero h1{
     font-size: 200px;
@@ -120,6 +158,9 @@ nav{
     box-shadow: 5px 5px 20px white;
     
 }
+
+
+ 
 #integrantes h3{
     font-size:23px;
 }
@@ -129,5 +170,58 @@ nav{
 }
 .div-catalogo{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
+.div-catalogo iframe
+{height:900px;
+    width: 30%;
+
+}
+@keyframes slde {
+	0% {margin-left: 0;}
+	27% {margin-left: 0;}
+	
+	33% {margin-left: -200%;}
+	59% {margin-left: -200%;}
+	
+	66% {margin-left: -300%;}
+	95% {margin-left: -300%;}
+	
+	95% {margin-left: -400%;}
+	0% {margin-left:0%;}
+}
+@keyframes slide1 {
+	0% {opacity: 1;}
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes slide2 {
+	0% {opacity: 1;}
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes slide3 {
+	0% {opacity: 1;}
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+       
+    }
+}
+  
+  
+
 
