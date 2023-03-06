@@ -140,7 +140,7 @@ nav {
 }
 .barrenos-img-text {
   display: flex;
-  width: 100%;
+  width: 90%;
   justify-content: center;
   gap: 100px;
   align-items: center;
@@ -160,19 +160,17 @@ nav {
   text-transform: uppercase;
 }
 .img-barrenos {
-  width: 25%;
-  height: 700px;
+  width: 19%;
+  height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url(./img-catalogo/2.jpg);
-  background-position: center;
+  background-position:center;
   background-repeat: no-repeat;
-  border-radius: 30px;
-  background-size: cover;
+  background-size:100%;
   animation: slidebarrenos 16s ease 0s infinite forwards;
-  border: 2px var(--grisoscuro) solid;
-  box-shadow: 5px 5px 10px 1px var(--grisoscuro);
+  
 }
 .text-barrenos {
   width: 40%;
@@ -182,7 +180,7 @@ nav {
   font-family: var(--info);
   line-height: 60px;
   padding: 50px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
 }
 .barrenos p span {
@@ -209,16 +207,17 @@ nav {
   gap: 100px;
 }
 .img-medicion{
-  background-image: url(./img-catalogo/6.jpg);
-  background-position: center;
+  width: 19%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./img-catalogo/2.jpg);
+  background-position:center;
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 21%;
-  height: 600px;
-  border-radius: 30px;
+  background-size:100%;
   animation: slidemedicion 28s ease 0s infinite forwards;
-  border: 2px var(--grisoscuro) solid;
-  box-shadow: 5px 5px 10px 1px var(--grisoscuro);
+ 
 }
 .text-medicion{
   width: 40%;
@@ -228,17 +227,20 @@ nav {
   font-family: var(--info);
   line-height: 60px;
   padding: 50px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
 }
 .text-medicion p span {
   color: var(--verdeepa);
   font-weight: 600;
+
 }
 .text-medicion p span:hover{
   color: var(--verdeclaro
   );
+ 
 }
+
 
 @keyframes slidet {
   0% {
@@ -272,35 +274,35 @@ nav {
 @keyframes slidebarrenos {
   0% {
     background-image: url(./img-catalogo/2.jpg);
-    background-size: cover;
+   
   }
   25% {
     background-image: url(./img-catalogo/2.jpg);
-    background-size: cover;
+    
   }
   29% {
     background-image: url(./img-catalogo/3.jpg);
-    background-size: cover;
+    
   }
   50% {
     background-image: url(./img-catalogo/3.jpg);
-    background-size: cover;
+   
   }
   54% {
     background-image: url(./img-catalogo/4.jpg);
-    background-size: cover;
+    
   }
   75% {
     background-image: url(./img-catalogo/4.jpg);
-    background-size: cover;
+   
   }
   79% {
     background-image: url(./img-catalogo/18.jpg);
-    background-size:cover;
+    
   }
   100% {
     background-image: url(./img-catalogo/18.jpg);
-    background-size: cover;
+
   }
 }
 @keyframes slidemedicion {
