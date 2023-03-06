@@ -200,9 +200,6 @@ nav {
   width: 100%;
   gap: 30px;
 }
-.medicion h2{
-
-}
 .medicion-img-text{
   display: flex;
   align-items: center;
@@ -216,8 +213,8 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 28%;
-  height: 800px;
+  width: 21%;
+  height: 600px;
   border-radius: 30px;
   animation: slidemedicion 28s ease 0s infinite forwards;
   border: 2px var(--grisoscuro) solid;
@@ -283,24 +280,27 @@ nav {
   }
   29% {
     background-image: url(./img-catalogo/3.jpg);
+    background-size: cover;
   }
   50% {
     background-image: url(./img-catalogo/3.jpg);
+    background-size: cover;
   }
   54% {
     background-image: url(./img-catalogo/4.jpg);
+    background-size: cover;
   }
   75% {
     background-image: url(./img-catalogo/4.jpg);
+    background-size: cover;
   }
   79% {
-    background-image: url(./img-cucharines/2.jpeg);
-    background-size: contain;
-   
+    background-image: url(./img-catalogo/18.jpg);
+    background-size:cover;
   }
   100% {
-    background-image: url(./img-cucharines/2.jpeg);
-    background-size: contain;
+    background-image: url(./img-catalogo/18.jpg);
+    background-size: cover;
   }
 }
 @keyframes slidemedicion {
