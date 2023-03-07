@@ -87,7 +87,7 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   padding: 20px;
 }
@@ -217,7 +217,6 @@ nav {
   background-repeat: no-repeat;
   background-size:100%;
   animation: slidemedicion 28s ease 0s infinite forwards;
- 
 }
 .text-medicion{
   width: 40%;
@@ -238,8 +237,11 @@ nav {
 .text-medicion p span:hover{
   color: var(--verdeclaro
   );
- 
 }
+.contactomain{
+  width: 100%;
+}
+
 
 
 @keyframes slidet {
