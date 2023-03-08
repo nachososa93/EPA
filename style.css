@@ -36,6 +36,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 nav {
   width: 100%;
@@ -44,7 +45,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
+ 
+  
 }
+
 #logoepa {
   width: 70px;
   height: 70px;
@@ -52,7 +56,12 @@ nav {
 .ulnav {
   display: flex;
   gap: 30px;
+
 }
+.ulnav a, nav a {
+  color: var(--grisoscuro);
+}
+
 .hero {
   width: 100%;
 }
@@ -252,6 +261,7 @@ nav {
   display: flex;
   align-items:flex-start;
   justify-content: center;
+  padding-top: 100px;
  
 
 }
@@ -327,6 +337,24 @@ nav {
 .datoscontacto a:hover{
   color: var(--verdeepa);
   font-weight: bold;
+}
+
+.barraimg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  position: relative;
+  top: 0px;
+  right:0px;
+  width: 100%;
+  animation: barraimg 30s linear 0s infinite forwards;
+}
+.barraimg img  {
+  width: 100px;
+}
+.barraimg img:hover{
+  animation: none;
 }
 
  
@@ -443,4 +471,11 @@ nav {
     background-image: url(./img-catalogo/17.jpg);
   }
 
+}
+@keyframes barraimg {
+  0%{ left: -1000px;}
+  100%{left: 0px;
+  }
+  }
+  
 }
