@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -24,9 +23,19 @@ body {
   background-color: var(--girsclaro);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23dda77b' fill-opacity='0.29' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   width: 100%;
-  height: 100vh;
   color: var(--grisoscuro);
   font-family: var(--info);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 nav {
   width: 100%;
@@ -127,7 +136,7 @@ nav {
 .titulointegrantes h2 {
   font-size: 35px;
   font-family: var(--titulos);
-  text-transform: uppercase;
+  
 }
 
 .div-catalogo {
@@ -239,9 +248,88 @@ nav {
   );
 }
 .contactomain{
-  width: 100%;
+  width: 70%;
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+ 
+
 }
- ""
+.venta{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+
+}
+.venta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+  font-family: var(--info);
+  font-style: bold;
+  text-decoration: none;
+  color: var(--grisoscuro);
+
+ 
+}
+.venta a:hover{
+  color: var(--verdeepa);
+  font-weight: bold;
+  
+
+}
+.venta a img{
+  width: 60px;
+}
+.venta h3{
+  font-size: 30px;
+  font-weight: 600;
+}
+.contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  flex-direction: column;
+}
+.contacto h2{
+  font-size: 30px;
+  font-weight: 800;
+}
+.contacto h2 span{
+  color: var(--verdeepa);
+}
+.datoscontacto{
+  display: flex;
+  gap: 30px ;
+  flex-direction: column;
+  width: 100%;
+ 
+}
+.datoscontacto a img{
+  width: 40px;
+}
+.datoscontacto a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #3f3e3e;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  
+}
+.datoscontacto a:hover{
+  color: var(--verdeepa);
+  font-weight: bold;
+}
+
+ 
 
 
 @keyframes slidet {
