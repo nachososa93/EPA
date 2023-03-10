@@ -30,6 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   text-decoration: none;
+
 }
 header{
   width: 100%;
@@ -338,23 +339,41 @@ nav {
   color: var(--verdeepa);
   font-weight: bold;
 }
+.regalosempresariales{
+  width: 100%;
+}
+.img-text-regalo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow-x: hidden;
+  
+}
 
 .barraimg{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 200px;
+  gap: 150px;
+  width: 100%;
   position: relative;
   top: 0px;
-  right:0px;
-  width: 100%;
-  animation: barraimg 30s linear 0s infinite forwards;
+  right: -1300px;  
+  
+
+
+  animation: barraimg 25s ease-in-out 0s infinite forwards;
+
 }
 .barraimg img  {
-  width: 100px;
+  width: 150px;
 }
-.barraimg img:hover{
-  animation: none;
+
+#img1{
+  width: 250px;
 }
 
  
@@ -473,9 +492,9 @@ nav {
 
 }
 @keyframes barraimg {
-  0%{ left: -1000px;}
-  100%{left: 0px;
+  0%{ right:-1300px;}
+  100%{right: 1300px
   }
   }
   
-}
+
