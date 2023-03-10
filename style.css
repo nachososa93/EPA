@@ -30,14 +30,12 @@ body {
   display: flex;
   flex-direction: column;
   text-decoration: none;
-
 }
-header{
+header {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 nav {
   width: 100%;
@@ -46,8 +44,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
- 
-  
 }
 
 #logoepa {
@@ -57,9 +53,9 @@ nav {
 .ulnav {
   display: flex;
   gap: 30px;
-
 }
-.ulnav a, nav a {
+.ulnav a,
+nav a {
   color: var(--grisoscuro);
 }
 
@@ -146,7 +142,6 @@ nav {
 .titulointegrantes h2 {
   font-size: 35px;
   font-family: var(--titulos);
-  
 }
 
 .div-catalogo {
@@ -172,7 +167,8 @@ nav {
   gap: 30px;
   width: 100%;
 }
-.barrenos h2, .medicion h2 {
+.barrenos h2,
+.medicion h2 {
   font-size: 40px;
   font-weight: 600;
   font-family: var(--titulos);
@@ -185,11 +181,10 @@ nav {
   align-items: center;
   justify-content: center;
   background-image: url(./img-catalogo/2.jpg);
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size: 100%;
   animation: slidebarrenos 16s ease 0s infinite forwards;
-  
 }
 .text-barrenos {
   width: 40%;
@@ -206,10 +201,10 @@ nav {
   color: var(--verdeepa);
   font-weight: 600;
 }
-.barrenos p span:hover{
+.barrenos p span:hover {
   color: var(--verdeclaro);
 }
-.medicion{
+.medicion {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -217,7 +212,7 @@ nav {
   width: 100%;
   gap: 30px;
 }
-.medicion-img-text{
+.medicion-img-text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,19 +220,19 @@ nav {
   width: 100%;
   gap: 100px;
 }
-.img-medicion{
+.img-medicion {
   width: 19%;
   height: 650px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url(./img-catalogo/2.jpg);
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size: 100%;
   animation: slidemedicion 28s ease 0s infinite forwards;
 }
-.text-medicion{
+.text-medicion {
   width: 40%;
   display: flex;
   justify-content: center;
@@ -251,29 +246,24 @@ nav {
 .text-medicion p span {
   color: var(--verdeepa);
   font-weight: 600;
-
 }
-.text-medicion p span:hover{
-  color: var(--verdeclaro
-  );
+.text-medicion p span:hover {
+  color: var(--verdeclaro);
 }
-.contactomain{
-  width: 70%;
+.contactomain {
+  width: 80%;
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: center;
   padding-top: 100px;
- 
-
 }
-.venta{
-  width: 30%;
+.venta {
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 100px;
-
 }
 .venta a {
   display: flex;
@@ -285,44 +275,40 @@ nav {
   font-style: bold;
   text-decoration: none;
   color: var(--grisoscuro);
-
- 
 }
-.venta a:hover{
+.venta a:hover {
   color: var(--verdeepa);
   font-weight: bold;
-  
-
 }
-.venta a img{
+.venta a img {
   width: 60px;
 }
-.venta h3{
-  font-size: 30px;
-  font-weight: 600;
-}
-.contacto{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  flex-direction: column;
-}
-.contacto h2{
+.venta h2 {
   font-size: 30px;
   font-weight: 800;
 }
-.contacto h2 span{
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  gap: 40px;
+  flex-direction: column;
+}
+.contacto h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+.contacto h2 span {
   color: var(--verdeepa);
 }
-.datoscontacto{
+.datoscontacto {
   display: flex;
-  gap: 30px ;
+  gap: 30px;
   flex-direction: column;
   width: 100%;
- 
 }
-.datoscontacto a img{
+.datoscontacto a img {
   width: 40px;
 }
 .datoscontacto a {
@@ -333,16 +319,15 @@ nav {
   align-items: center;
   display: flex;
   gap: 30px;
-  
 }
-.datoscontacto a:hover{
+.datoscontacto a:hover {
   color: var(--verdeepa);
   font-weight: bold;
 }
-.regalosempresariales{
+.regalosempresariales {
   width: 100%;
 }
-.img-text-regalo{
+.img-text-regalo {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -350,34 +335,33 @@ nav {
   align-items: center;
   gap: 30px;
   overflow-x: hidden;
-  
 }
 
-.barraimg{
+.barraimg {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 150px;
+  gap: 100px;
   width: 100%;
   position: relative;
   top: 0px;
-  right: -1300px;  
-  
-
-
+  right: -1300px;
   animation: barraimg 25s ease-in-out 0s infinite forwards;
-
 }
-.barraimg img  {
+.img-text-regalo h2{
+  font-size: 30px;
+  font-weight:900;
+}
+.barraimg img {
   width: 150px;
+  border-radius: 20px;
 }
-
-#img1{
+#img1 {
   width: 250px;
 }
-
- 
-
+#img2 {
+  width: 450px;
+}
 
 @keyframes slidet {
   0% {
@@ -411,35 +395,27 @@ nav {
 @keyframes slidebarrenos {
   0% {
     background-image: url(./img-catalogo/2.jpg);
-   
   }
   25% {
     background-image: url(./img-catalogo/2.jpg);
-    
   }
   29% {
     background-image: url(./img-catalogo/3.jpg);
-    
   }
   50% {
     background-image: url(./img-catalogo/3.jpg);
-   
   }
   54% {
     background-image: url(./img-catalogo/4.jpg);
-    
   }
   75% {
     background-image: url(./img-catalogo/4.jpg);
-   
   }
   79% {
     background-image: url(./img-catalogo/18.jpg);
-    
   }
   100% {
     background-image: url(./img-catalogo/18.jpg);
-
   }
 }
 @keyframes slidemedicion {
@@ -460,19 +436,15 @@ nav {
   }
   42% {
     background-image: url(./img-catalogo/8.jpg);
-    
   }
-  45%{
+  45% {
     background-image: url(./img-catalogo/9.jpg);
-    
   }
   56% {
     background-image: url(./img-catalogo/9.jpg);
-    
   }
   58% {
     background-image: url(./img-catalogo/10.jpg);
-    
   }
   70% {
     background-image: url(./img-catalogo/10.jpg);
@@ -489,12 +461,12 @@ nav {
   100% {
     background-image: url(./img-catalogo/17.jpg);
   }
-
 }
 @keyframes barraimg {
-  0%{ right:-1300px;}
-  100%{right: 1300px
+  0% {
+    right: -1300px;
   }
+  100% {
+    right: 1300px;
   }
-  
-
+}
