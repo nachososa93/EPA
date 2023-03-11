@@ -1,0 +1,113 @@
+@media (max-width: 1600px) {
+  .barraimg img {
+    width: 110px;
+  }
+  #img1 {
+    width: 190px;
+  }
+  #img2 {
+    width: 330px;
+  }
+  .barraimg {
+    position: relative;
+    right: 1100px;
+  }
+  @keyframes barraimg {
+    0% {
+      right: -1100px;
+    }
+    100% {
+      right: 1100px;
+    }
+  }
+  .img-medicion, .img-barrenos{
+    width: 25%;
+  }
+}
+@media (max-width: 1400px){
+    .barrenos h2, .medicion h2, .img-text-regalo h2, .titulointegrantes h2, .contacto h2, .venta h2 {
+        font-size: 30px;
+    }
+    .text-barrenos, .text-medicion{
+        font-size: 20px;
+    }
+    .img-medicion, .img-barrenos{
+        width: 30%;
+      }
+      .barraimg img {
+    width: 110px;
+  }
+  #img1 {
+    width: 190px;
+  }
+  #img2 {
+    width: 330px;
+  }
+  .barraimg {
+    position: relative;
+    right: 1200px;
+  }
+  @keyframes barraimg {
+    0% {
+      right: -1200px;
+    }
+    100% {
+      right: 1200px;
+    }
+  }
+  .ulnav{
+    gap: 35px;
+  }
+  }
+
+
+@media (max-width: 1200px){
+    .img-medicion, .img-barrenos{
+        width: 40%;
+      }
+    .text-barrenos{
+        padding: 0px;
+    }
+    .datoscontacto a , .datosventas a{
+        font-size: 15px;
+    }
+    .datoscontacto a img{
+       width: 40px;
+    }
+    .datosventas a img{
+        width: 60px;
+    }
+    .contactomain{
+        width: 100%;
+        padding: 30px 50px;
+    }
+}
+@media (max-width: 900px){
+    .ulnav a, nav a{ font-size: 17px;
+       
+    }
+    .text-barrenos, .text-medicion{
+        font-size: 15px;
+       padding: 0px;
+    }
+    .barrenos, .medicion{
+        gap: 10px;
+        padding: 5px;
+    }
+    .barraimg {
+        position: relative;
+        right: 1300px;
+      }
+      @keyframes barraimg {
+        0% {
+          right: -1300px;
+        }
+        100% {
+          right: 1300px;
+        }
+      }
+    }
+
+
+
+
