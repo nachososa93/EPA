@@ -68,7 +68,40 @@ nav a {
   color: var(--grisoscuro);
   font-size: 20px;
   font-weight: 500;
+  position: relative;
 }
+.ulnav li a::before, nav a::before{
+  content: "";
+  width: 0%;
+  height: 2px;
+  border-bottom: var(--verdeepa) 2px solid;
+  position: absolute;
+  left: 0px;
+  bottom: -2px;
+  transition: 1s;
+  opacity: 0;
+
+  
+
+}
+
+.ulnav li a::after, nav a::after{
+width: 0%;
+  content: "";
+  height: 2px;
+  position: absolute;
+  bottom: -3px;
+  right: 0px;
+  opacity: 0;
+  border-bottom: var(--verdeepa) 2px solid;
+  transition: 1s;}
+
+.ulnav li a:hover:after, nav a:hover:after,
+.ulnav li a:hover:before, nav a:hover::before{
+  width: 100%;
+  opacity: 1;
+}
+
 
 #menulabel, #menu, #licontacto{
   display: none;
@@ -379,6 +412,7 @@ nav a {
 #img2 {
   width: 450px;
 }
+
 footer p a img {
   width: 150px;
   height: 31px;
