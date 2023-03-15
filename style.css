@@ -45,7 +45,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px;
+  padding: 0px 80px;
   position:fixed;
   top: 0px;
   left: 0px;
@@ -63,14 +63,25 @@ background-color: var(--girsclaro);
   display: flex;
   gap: 100px;
 }
+.contactnav{
+  background-color: #3fa743;
+  border: solid 3px var(--verdeepa);
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+.contactnav:hover{
+  transition: 1s;
+  background-color: var(--amarilloepa);
+  border: 3px solid var(--verdeepa);
+}
 .ulnav a,
 nav a {
   color: var(--grisoscuro);
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
 }
-.ulnav li a::before, nav a::before{
+.ulnav li a::before{
   content: "";
   width: 0%;
   height: 2px;
@@ -81,11 +92,9 @@ nav a {
   transition: 1s;
   opacity: 0;
 
-  
-
 }
 
-.ulnav li a::after, nav a::after{
+.ulnav li a::after{
 width: 0%;
   content: "";
   height: 2px;
@@ -96,8 +105,8 @@ width: 0%;
   border-bottom: var(--verdeepa) 2px solid;
   transition: 1s;}
 
-.ulnav li a:hover:after, nav a:hover:after,
-.ulnav li a:hover:before, nav a:hover::before{
+.ulnav li a:hover:after, 
+.ulnav li a:hover:before {
   width: 100%;
   opacity: 1;
 }
@@ -400,7 +409,7 @@ width: 0%;
   position: relative;
   top: 0px;
   right: -1300px;
-  animation: barraimg 25s ease-in-out 0s infinite forwards;
+  animation: barraimg 5s ease-in-out 0s infinite forwards;
 }
 
 .barraimg img {
@@ -533,9 +542,9 @@ footer{
 }
 @keyframes barraimg {
   0% {
-    right: -1300px;
+    right: -1000px;
   }
   100% {
-    right: 1300px;
+    right: 1000px;
   }
 }
