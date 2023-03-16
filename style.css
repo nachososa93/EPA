@@ -67,6 +67,7 @@ background-color: var(--girsclaro);
   background-color: #3fa743;
   border: solid 3px var(--verdeepa);
   border-radius: 10px;
+  display: flex;
   padding: 10px 30px;
 }
 .contactnav:hover{
