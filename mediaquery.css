@@ -1,3 +1,15 @@
+:root {
+  --girsclaro: #e0e0e0;
+  --amarillo: #e9f679;
+  --amarilloepa: #d9df1d;
+  --verdeepa: #3fa743;
+  --grisoscuro: #3f3e3e;
+  --verdeclaro: #9dca2c;
+  --tierra: #dda77b;
+  --tierra2: #dcbf85;
+  --titulos: "CooperHewitt-Heavy", arial;
+  --info: "HK Grotesk", sans-serif;
+}
 @media (max-width: 2200px) {
   .barraimg {
     position: relative;
@@ -233,39 +245,62 @@
     top: 100px;
     right: 0px;
     padding: 0px 30px;
-    padding-top: 100px;
+    padding-top: 50px;
     justify-content: start;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     height: 100vh;
     background: rgba(63, 167, 67, 0.37);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.1px);
-    -webkit-backdrop-filter: blur(3.1px);;
-  }
-  #menulabel{
-    display: flex;
-  }
-  #menulabel img{
-width: 50px;
-  }
-  #menu:checked + .ulnav{
-    display: flex;
+    -webkit-backdrop-filter: blur(3.1px);
+    
     
   }
-  #menu:checked + .equipo-texto{
-    color: red;
-    background-color: rebeccapurple;
+  
+  .ulnav li a {
+    color:#000000;
+    font-size: 20px;
+    
   }
-
-
-  .contactnav {
-    display: none;
+  #menulabel {
+    display: flex;
   }
+  #menulabel img {
+    width: 50px;
+  }
+  
+  #menu:checked + .ulnav{
+    display: flex;
+    animation: navresponsive 1s ease-in-out 0s 1 forwards;
+  }
+   
+ 
+  
+  @keyframes navresponsive {
+    0% {
+      right: -200px;
+    }
+    100% {
+      right: 0px;
+    }
+  }
+  
+  
+  }
+ 
   #licontacto {
     display: flex;
   }
-}
+  .contactnav {
+    display: none;
+  }
+  @media (max-width: 500px) {
+    .equipo{
+      width: 100%;
+    }
+
+  }
 @media (max-width: 400px) {
   .barraimg {
     right: 1400px;
