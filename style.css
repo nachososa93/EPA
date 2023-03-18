@@ -179,14 +179,15 @@ width: 0%;
   width: 100%;
   gap: 100px;
 }
-#integrantes {
+.integrantes {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
 }
-#integrantes img {
+
+.integrantes img {
   border: var(--verdeepa) solid 2px;
   width: 150px;
   height: 150px;
@@ -194,7 +195,7 @@ width: 0%;
   box-shadow: 5px 5px 20px white;
 }
 
-#integrantes h3 {
+.integrantes h3 {
   font-size: 20px;
   font-family: var(--titulos);
   text-transform: uppercase;
@@ -410,7 +411,7 @@ width: 0%;
   position: relative;
   top: 0px;
   right: -1300px;
-  animation: barraimg 5s ease-in-out 0s infinite forwards;
+  animation: barraimg 25s linear 0s infinite forwards;
 }
 
 .barraimg img {
@@ -441,6 +442,7 @@ footer p {
 footer{
   padding-top: 55px;
 }
+
 
 @keyframes slidet {
   0% {
