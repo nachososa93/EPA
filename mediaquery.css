@@ -1,13 +1,16 @@
-@media (max-width: 1600px) {
-  .barraimg img {
-    width: 110px;
-  }
-  #img1 {
-    width: 190px;
-  }
-  #img2 {
-    width: 330px;
-  }
+:root {
+  --girsclaro: #e0e0e0;
+  --amarillo: #e9f679;
+  --amarilloepa: #d9df1d;
+  --verdeepa: #3fa743;
+  --grisoscuro: #3f3e3e;
+  --verdeclaro: #9dca2c;
+  --tierra: #dda77b;
+  --tierra2: #dcbf85;
+  --titulos: "CooperHewitt-Heavy", arial;
+  --info: "HK Grotesk", sans-serif;
+}
+@media (max-width: 2200px) {
   .barraimg {
     position: relative;
     right: 1100px;
@@ -20,31 +23,39 @@
       right: 1100px;
     }
   }
-  .img-medicion, .img-barrenos{
-    width: 25%;
+  .tituloshero {
+    display: none;
+  }
+  .contactnav{
+    display: flex;
+  }
+
+}
+@media (max-width: 2000px) {
+  .barraimg {
+    right: 1300px;
+  }
+  @keyframes barraimg {
+    0% {
+      right: -1300px;
+    }
+    100% {
+      right: 1300px;
+    }
   }
 }
-@media (max-width: 1400px){
-    .barrenos h2, .medicion h2, .img-text-regalo h2, .titulointegrantes h2, .contacto h2, .venta h2 {
-        font-size: 30px;
-    }
-    .text-barrenos, .text-medicion{
-        font-size: 20px;
-    }
-    .img-medicion, .img-barrenos{
-        width: 30%;
-      }
-      .barraimg img {
-    width: 110px;
+
+@media (max-width: 1700px) {
+  .barraimg img {
+    width: 130px;
   }
   #img1 {
-    width: 190px;
+    width: 240px;
   }
   #img2 {
-    width: 330px;
+    width: 410px;
   }
   .barraimg {
-    position: relative;
     right: 1200px;
   }
   @keyframes barraimg {
@@ -55,74 +66,429 @@
       right: 1200px;
     }
   }
-  .ulnav{
+  .img-medicion,
+  .img-barrenos {
+    width: 25%;
+  }
+}
+@media (max-width: 1400px) {
+  .barrenos h2,
+  .medicion h2,
+  .img-text-regalo h2,
+  .titulointegrantes h2,
+  .contacto h2,
+  .venta h2 {
+    font-size: 30px;
+  }
+  .text-barrenos,
+  .text-medicion {
+    font-size: 20px;
+  }
+  .img-medicion,
+  .img-barrenos {
+    width: 30%;
+  }
+  .barraimg img {
+    width: 110px;
+  }
+  #img1 {
+    width: 190px;
+  }
+  #img2 {
+    width: 330px;
+  }
+  .barraimg {
+    right: 1200px;
+  }
+  @keyframes barraimg {
+    0% {
+      right: -1200px;
+    }
+    100% {
+      right: 1200px;
+    }
+  }
+  .ulnav {
     gap: 35px;
   }
+}
+
+@media (max-width: 1200px) {
+  .img-medicion,
+  .img-barrenos {
+    width: 40%;
+  }
+  .text-barrenos {
+    padding: 0px;
+  }
+  .datoscontacto a,
+  .datosventas a {
+    font-size: 15px;
+  }
+  .datoscontacto a img {
+    width: 40px;
+  }
+  .datosventas a img {
+    width: 60px;
+  }
+  .contactomain {
+    width: 100%;
+    padding: 30px 50px;
+  }
+}
+@media (max-width: 1100px) {
+  .barraimg img {
+    width: 130px;
+  }
+  #img1 {
+    width: 240px;
+  }
+  #img2 {
+    width: 410px;
+  }
+  .barraimg {
+    right: 1600px;
+  }
+  @keyframes barraimg {
+    0% {
+      right: -1600px;
+    }
+    100% {
+      right: 1600px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .ulnav a,
+  nav a {
+    font-size: 17px;
+  }
+  nav {
+    padding: 0px 20px;
+  }
+  .text-barrenos,
+  .text-medicion {
+    font-size: 15px;
+    padding: 0px;
+    line-height: 50px;
+  }
+  .barrenos,
+  .medicion {
+    gap: 10px;
+    padding: 5px;
+  }
+  .img-barrenos,.img-medicion{
+    height: 500px;
+  }
+  .barraimg {
+    right: 1700px;
+  }
+  @keyframes barraimg {
+    0% {
+      right: -1700px;
+    }
+    100% {
+      right: 1700px;
+    }
+  }
+  footer p {
+    font-size: 15px;
+  }
+  footer p a img {
+    width: 70px;
+    height: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .integrantes h3 {
+    font-size: 15px;
+  }
+  .contactnav,
+  .ulnav a {
+    font-size: 15px;
+  }
+  .contactnav {
+    padding: 5px 20px;
+  }
+  .ulnav {
+    gap: 15px;
   }
 
-
-@media (max-width: 1200px){
-    .img-medicion, .img-barrenos{
-        width: 40%;
-      }
-    .text-barrenos{
-        padding: 0px;
-    }
-    .datoscontacto a , .datosventas a{
-        font-size: 15px;
-    }
-    .datoscontacto a img{
-       width: 40px;
-    }
-    .datosventas a img{
-        width: 60px;
-    }
-    .contactomain{
-        width: 100%;
-        padding: 30px 50px;
-    }
-}
-@media (max-width: 900px){
-    .ulnav a, nav a{ font-size: 17px;
-       
-    }
-    .text-barrenos, .text-medicion{
-        font-size: 15px;
-       padding: 0px;
-    }
-    .barrenos, .medicion{
-        gap: 10px;
-        padding: 5px;
-    }
-    .barraimg {
-        position: relative;
-        right: 1300px;
-      }
-      @keyframes barraimg {
-        0% {
-          right: -1300px;
-        }
-        100% {
-          right: 1300px;
-        }
-      }
-    }
-    @media (max-width: 800px){
-#integrantes h3{
-    font-size: 15px;
-}
-#integrantes img{
+  .integrantes img {
     width: 100px;
     height: 100px;
-}
-.integrantesgrupo ul{
+  }
+  .integrantesgrupo ul {
     gap: 30px;
-}
-.barrenos h2, .medicion h2, .img-text-regalo h2, .titulointegrantes h2, .contacto h2, .venta h2 {
+  }
+  .barrenos h2,
+  .medicion h2,
+  .img-text-regalo h2,
+  .titulointegrantes h2,
+  .contacto h2,
+  .venta h2 {
     font-size: 25px;
+  }
+  .img-medicion,
+  .img-barrenos {
+    width: 50%;
+  }
+  .datoscontacto, .datosventas{
+    font-size: 10px;
+  }
+  .datoscontacto a img {
+    width: 35px;
+  }
+  .datosventas a img{
+    width: 45px;
+  }
+  .barrenos,
+  .medicion {
+  padding: 0px 30px;
+  }
+  .div-catalogo{
+    padding-top: 10px;
+  }
+ 
 }
+@media (max-width: 700px) {
+  .img-medicion,
+  .img-barrenos {
+    width: 60%;
+  }
+  .barrenos,
+  .medicion {
+    gap: 10px;
+    padding: 20px;
+  }
+  .text-barrenos, .text-medicion{
+    font-size: 15px;
+    letter-spacing: normal;
+    line-height: 30px;
+    width: 30%;
+  }
+  .barrenos-img-text, .medicion-img-text{
+    gap: 50px ;
+
+  }
+
+.contactomain{
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.contacto{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.venta{
+  width: 100%;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.datoscontacto{
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.datoscontacto a, .datosventas a {
+ font-size: 12px;
+}
+}
+  
+
+@media (max-width: 650px) {
+  .barraimg {
+    right: 1700px;
+  }
+  @keyframes barraimg {
+    0% {
+      right: -1300px;
     }
+    100% {
+      right: 1300px;
+    }
+  }
+  .barraimg img {
+    width: 90px;
+  }
+  #img1 {
+    width: 150px;
+  }
+  #img2 {
+    width: 280px;
+  }
+  .text-barrenos, .text-medicion{
+    font-size: 15px;
+    letter-spacing: normal;
+    line-height: 25px;
+
+  }
+}
+@media (max-width: 600px) {
+  .ulnav {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 70px;
+    right: 0px;
+    padding: 0px 30px;
+    padding-top: 50px;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    background: rgba(63, 167, 67, 0.37);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.1px);
+    -webkit-backdrop-filter: blur(3.1px);
+  }
+  nav{
+    height: 70px;
+  }
+ #logoepa{
+  height: 60px;
+  width: 60px;
+ }
+ .hero{
+  padding-top: 70px;
+ }
+  
+  .ulnav li a {
+    color:#000000;
+    font-size: 20px;
+    
+  }
+  #menulabel {
+    display: flex;
+  }
+  #menulabel img {
+    width: 50px;
+  }
+  
+  #menu:checked + .ulnav{
+    display: flex;
+    animation: navresponsive 1s ease-in-out 0s 1 forwards;
+  }
+
+   
+ 
+  
+  @keyframes navresponsive {
+    0% {
+      right: -200px;
+    }
+    100% {
+      right: 0px;
+    }
+  }
+  
+  .contactnav {
+    display: none;
+  } 
+  #licontacto {
+    display: flex;
+  }
+  .barrenos-img-text, .medicion-img-text{
+   flex-direction: column;
+   gap: 10px;
 
 
+  }
+  .text-barrenos, .text-medicion{
+    width: 90%;
+  }
+  .img-barrenos,.img-medicion{
+    height: 450px;
+  }
+  .datoscontacto, .datosventas{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .datoscontacto a, .datosventas a {
+    width: 100%;
+    justify-content: start;
+  }
+  .integrantesgrupo ul {
+    flex-wrap: wrap;
+  }
+  .integrantes img{
+    width:100px;
+  }
+  .integrantes{
+    width: 100%;
+  }
+  }
+  
+ 
+  @media (max-width: 500px) {
+    .equipo{
+      width: 100%;
+    }
+    .img-barrenos,.img-medicion{
+      width: 70%;
+     }
 
-
+  }
+@media (max-width: 400px) {
+  .barraimg {
+    right: 1400px;
+  }
+  @keyframes barraimg {
+    0% {
+      right: -1400px;
+    }
+    100% {
+      right: 1400px;
+    }
+  }
+  .barraimg img {
+    width: 90px;
+  }
+  #img1 {
+    width: 150px;
+  }
+  #img2 {
+    width: 280px;
+  }
+  .equipo-texto{
+    font-size: 15px;
+    padding-top: 0px;
+  }
+  .barrenos h2,
+  .medicion h2,
+  .img-text-regalo h2,
+  .titulointegrantes h2,
+  .contacto h2,
+  .venta h2 {
+    font-size: 15px;
+  }
+  .img-barrenos,.img-medicion{
+    width: 90%;
+   }
+   .datoscontacto a img, .datosventas a img{
+    width: 30px;
+   }
+   .datoscontacto, .datosventas{
+    font-size: 10px;
+    gap: 20px;
+   }
+   .datoscontacto a, .datosventas a {
+    gap: 10px;
+  
+   }
+   .contactomain{
+    padding: 20px;
+   }
+   footer{
+    border-top: 2px solid black;
+    width: 100%;
+    padding: 0px;
+    margin-top: 100px;
+   }
+}
