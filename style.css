@@ -532,9 +532,9 @@ footer{
 }
 @keyframes barraimg {
   0% {
-    right: -1300px;
+    right: -1000px;
   }
   100% {
-    right: 1300px;
+    right: 1000px;
   }
 }
